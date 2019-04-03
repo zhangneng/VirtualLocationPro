@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/biz_pics_menu_bg"
+    android:id="@+id/right_per_msg_center_id" >
+    <!-- 顶部个人基本信息 -->
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="70dip">
+        <ImageView 
+            android:id="@+id/right_permsg_center_img_usericon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/night_biz_pc_account_avatar_bg"
+            android:scaleType="fitXY"/>
+        <TextView 
+            android:id="@+id/right_permsg_center_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permsg_center_name"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/whilte"
+            android:textSize="15sp"
+            android:layout_marginTop="13dip"/>
+        <ImageView 
+            android:id="@+id/right_permsg_center_img_icon"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:src="@drawable/biz_pc_main_money_icon"
+            android:layout_alignLeft="@id/right_permsg_center_tv_name"/>
+        <TextView 
+            android:id="@+id/right_permsg_center_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:layout_toRightOf="@id/right_permsg_center_img_icon"
+            android:text="@string/permsg_center_level"
+            android:textColor="@color/whilte"
+            android:layout_marginLeft="5dip"
+            android:textSize="10sp"
+            android:layout_alignBaseline="@id/right_permsg_center_img_icon"
+            android:layout_marginTop="2dip"/>
+        <ImageButton 
+            android:id="@+id/right_permsg_center_imgbtn_select"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/app_recommend_arrow"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <!-- 中间三个button  我的跟帖，我的收藏，消息推送 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/right_permsg_center_btn_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permsg_center_thread"
+            android:drawableTop="@drawable/biz_pc_go_tie"
+            android:background="#00000000"
+            android:textColor="@color/whilte"
+            android:layout_weight="1"
+             />
+        <Button
+            android:id="@+id/right_permsg_center_btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permsg_center_collect"
+            android:drawableTop="@drawable/biz_pc_go_favor"
+            android:background="#00000000"
+            android:textColor="@color/whilte"
+            android:layout_weight="1"
+            />
+        <Button
+           
+            android:id="@+id/right_permsg_center_btn_msgpush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permsg_center_msgpush"
+            android:drawableTop="@drawable/biz_pc_go_msg"
+            android:background="#00000000"
+            android:textColor="@color/whilte"
+            android:layout_weight="1"
+            />      
+    </LinearLayout>
+   
+ 
+    <ListView
+        android:id="@+id/right_permsg_center_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/biz_main_tab_divider"
+        android:cacheColorHint="#00000000"/>
+  
+   
+
+</LinearLayout>

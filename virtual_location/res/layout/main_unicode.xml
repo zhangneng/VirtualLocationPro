@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+   
+     <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/base_actionbar_bg">
+         <ImageButton 
+             android:id="@+id/main_left_imgbtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:background="@drawable/biz_news_main_back_normal"
+             android:layout_marginLeft="5dip"
+             />
+         <ImageView 
+             android:id="@+id/main_center_logo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:src="@drawable/logo"
+             android:layout_toRightOf="@id/main_left_imgbtn"/>
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/main_center_logo"
+             android:layout_centerVertical="true"
+             android:text="新闻"
+             android:textColor="@color/whilte"
+             android:textSize="25sp"/>
+         <ImageButton
+             android:id="@+id/main_right_imgbtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="5dip"
+             android:background="@drawable/night_base_main_action_personal_normal"/>
+     </RelativeLayout>
+      <android.support.v4.view.ViewPager
+          android:id="@+id/myviewpager"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          >
+          <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pagertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+      </android.support.v4.view.ViewPager>
+     
+</LinearLayout>

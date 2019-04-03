@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:background="@drawable/night_biz_news_column_edit_bg_pressed" >
+
+    <ImageView
+        android:id="@+id/left_category_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/biz_navigation_tab_news" />
+
+    <TextView
+        android:id="@+id/left_category_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="17dip"
+        android:layout_toRightOf="@id/left_category_item_img"
+        android:text="@string/category_item_new_name"
+        android:textColor="@color/whilte"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/left_category_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/left_category_item_name"
+        android:layout_below="@id/left_category_item_name"
+        android:layout_toRightOf="@id/left_category_item_img"
+        android:text="@string/category_item_new_title"
+        android:textColor="@color/whilte" 
+        android:textSize="12sp"/>
+
+</RelativeLayout>
