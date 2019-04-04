@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item android:background="#FFFFFF" android:state_pressed="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- pressed -->
+    <item android:background="#000000" android:state_focused="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- focused -->
+    <item android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- default -->
+
+</selector>

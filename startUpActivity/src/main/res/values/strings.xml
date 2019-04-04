@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">水果消消乐</string>
+    <string name="login">登录</string>
+    <string name="secret">密码</string>
+    <string name="name">输入用户名（手机号码）</string>
+    <string name="menu_settings">设置</string>
+    <string name="about">www.tokudu.com</string>
+    <string name="title_mark">显示用户图标</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="stop_service">开启推送服务</string>
+    <string name="start_service">停止推送服务</string>
+    <string name="target">Your Device Target:</string>
+    <string name="activity_prompt">上滑可以进入首页</string>
+    <string name="register_title">注册</string>
+    <string name="register_name_hint">请输入手机号码</string>
+    <string name="register_passwd_hint">请输入密码</string>
+    <string name="register_name">用户名</string>
+    <string name="register_passwd">密码</string>
+    <string name="register_descripe">登录或注册代表你同意软件协议</string>
+    <string name="back">后退</string>
+    <string name="submit">提交</string>
+    <string name="old_passwd_hint">请输入旧密码</string>
+    <string name="new_passwd_hint">请输入新密码</string>
+    <string name="category_item_new_name">新闻</string>
+    <string name="category_item_new_title">NEWS</string>
+    <string name="permsg_center_name">jiangqqlmj</string>
+    <string name="permsg_center_level">400 / 跟帖局科长</string>
+    <string name="permsg_center_thread">我的跟帖</string>
+    <string name="permsg_center_collect">我的收藏</string>
+    <string name="permsg_center_msgpush">消息推送</string>
+    <string name="permsg_center_version">版本</string>
+    <string name="permsg_center_plug">插件</string>
+    <string name="action_settings">Settings</string>
+    <string name="updataurl">http://10.0.2.2:8080/update.xml</string>
+    <string name="btn_name">I am the Old One ! xixi!</string>
+    <drawable name="clr_normal">#000000</drawable>
+    <drawable name="clr_pressed">#FFFFFF</drawable>
+</resources>
