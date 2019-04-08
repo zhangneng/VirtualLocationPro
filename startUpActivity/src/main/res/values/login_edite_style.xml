@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="login_edittext_style" parent="@android:style/Widget.EditText">
-        <item name="android:background">@drawable/edittext_style</item>
-    </style>
-
-</resources>

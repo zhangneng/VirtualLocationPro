@@ -1,3 +1,0 @@
-include ':gifView'
-include ':library'
-include ':startUpActivity'

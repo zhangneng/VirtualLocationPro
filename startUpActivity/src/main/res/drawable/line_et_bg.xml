@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <item
-        android:state_focused="true" android:drawable="@drawable/line_et_focus"/>
-    <item android:drawable="@drawable/line_et_normal"/>
-</selector>
