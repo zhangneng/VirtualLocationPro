@@ -1,0 +1,101 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From StartUpActivity:
+* ic_launcher-web.png
+* proguard-project.txt
+From library:
+* LICENSE.txt
+* build.gradle
+* library.iml
+* pom.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+actionbarsherlock =>
+    com.actionbarsherlock:actionbarsherlock:4.4.0@aar
+    com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In GifView:
+* AndroidManifest.xml => gifView\src\main\AndroidManifest.xml
+* assets\ => gifView\src\main\assets
+* res\ => gifView\src\main\res\
+* src\ => gifView\src\main\java\
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* lint.xml => library\lint.xml
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In StartUpActivity:
+* AndroidManifest.xml => startUpActivity\src\main\AndroidManifest.xml
+* assets\ => startUpActivity\src\main\assets
+* libs\httpmime-4.1.3.jar => startUpActivity\libs\httpmime-4.1.3.jar
+* libs\SocialSDK_QQZone_1.jar => startUpActivity\libs\SocialSDK_QQZone_1.jar
+* libs\SocialSDK_QQZone_2.jar => startUpActivity\libs\SocialSDK_QQZone_2.jar
+* libs\SocialSDK_tencentWB_1.jar => startUpActivity\libs\SocialSDK_tencentWB_1.jar
+* libs\SocialSDK_tencentWB_2.jar => startUpActivity\libs\SocialSDK_tencentWB_2.jar
+* libs\SocialSDK_WeiXin.jar => startUpActivity\libs\SocialSDK_WeiXin.jar
+* libs\umeng_sdk.jar => startUpActivity\libs\umeng_sdk.jar
+* libs\umeng_social_sdk.jar => startUpActivity\libs\umeng_social_sdk.jar
+* libs\wmqtt.jar => startUpActivity\libs\wmqtt.jar
+* libs\zt-zip-1.7.jar => startUpActivity\libs\zt-zip-1.7.jar
+* lint.xml => startUpActivity\lint.xml
+* res\ => startUpActivity\src\main\res\
+* src\ => startUpActivity\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

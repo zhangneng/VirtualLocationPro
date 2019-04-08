@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_name">
+        <item>新闻</item>
+        <item>本地</item>
+        <item>跟帖</item>
+        <item>图片</item>
+        <item>话题</item>
+        <item>投票</item>
+        <item>微生活</item>
+        <item>聚合阅读</item>
+    </string-array>
+    <string-array name="category_title">
+        <item>NEWS</item>
+        <item>LOCAL</item>
+        <item>COMMENT</item>
+        <item>PHOTO</item>
+        <item>TOPIC</item>
+        <item>VOTE</item>
+        <item>MICRO</item>
+        <item>FOCUS</item>
+    </string-array>
+    <string-array name="msg_center">
+        <item>与小编拼智商赢话费</item>
+        <item>设置</item>
+        <item>上海38°C/29°C</item>
+        <item>离线下载</item>
+        <item>夜间模式</item>
+        <item>搜索新闻</item>
+        <item>网易邮箱</item>
+    </string-array>
+    
+    <string-array name="viewpager_title">
+        <item>头条</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>财经</item>
+        <item>科技</item>
+    </string-array>
+
+</resources>
